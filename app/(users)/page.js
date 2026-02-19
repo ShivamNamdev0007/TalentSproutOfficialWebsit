@@ -19,6 +19,7 @@ export default function Home() {
     {/* <StatsSection/> */}
     <WhyTalentSprout/>
     <GrowTogetherCTA/>
+    <br></br>
     <Footer/>
    </>
   );
