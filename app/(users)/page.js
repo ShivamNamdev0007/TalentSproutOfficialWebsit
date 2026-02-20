@@ -3,9 +3,10 @@ import GrowTogetherCTA from "@/Components/Landingpage/GrowTogetherCTA";
 import HeroSection from "@/Components/Landingpage/HeroSection";
 import MissionVision from "@/Components/Landingpage/MissionVision";
 import OurServices from "@/Components/Landingpage/OurServices"; 
+import PartnersSection from "@/Components/Landingpage/PartnersSection";
 import StatsSection from "@/Components/Landingpage/StatsSection";
 import WhoWeAre from "@/Components/Landingpage/WhoWeAre";
-import WhyTalentSprout from "@/Components/Landingpage/WhyTalentSprout";
+import WhyTalentSprout from "@/Components/Landingpage/WhyChooseTalentSprout";
 import Navbar from "@/Components/Navbar/Navbar";
 
 export default function Home() {
@@ -13,12 +14,13 @@ export default function Home() {
    <>
    <Navbar/>
    <HeroSection/>
-   <WhoWeAre/>
-   <MissionVision/>
+   <PartnersSection></PartnersSection>
+   {/* <WhoWeAre/> */}
+   {/* <MissionVision/> */}
     <OurServices/>
     {/* <StatsSection/> */}
     <WhyTalentSprout/>
-    <GrowTogetherCTA/>
+    {/* <GrowTogetherCTA/> */}
     <br></br>
     <Footer/>
    </>
