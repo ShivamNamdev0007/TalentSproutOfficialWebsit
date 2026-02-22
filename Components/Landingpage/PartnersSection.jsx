@@ -32,14 +32,14 @@ export default function PartnersSection() {
 
         {/* Heading */}
         <h2 className="text-center text-4xl md:text-5xl font-bold mb-20">
-          <span className="text-gray-500">We </span>
+          <span className="text-black">We </span>
           <span className="text-orange-500">Partners With..</span>
         </h2>
 
         <div className="relative flex justify-center items-center">
 
           {/* Center Image */}
-          <div className="relative w-[520px] h-[520px] md:w-[420px] md:h-[550px] rounded-full overflow-hidden z-10">
+          <div className="relative w-130   h-130 md:w-105 md:h-137.5 rounded-full overflow-hidden z-10">
             <Image
               src="/herosBackgroundImg.png"
               alt="handshake"
