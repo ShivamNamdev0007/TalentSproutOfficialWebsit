@@ -43,7 +43,7 @@ export default function HeroSection2() {
             </p>
 
             <div className="mt-8">
-              <button className="px-6 sm:px-8 py-3 text-sm sm:text-base border border-white text-white rounded-lg hover:bg-white hover:text-black transition duration-300 w-full sm:w-auto">
+              <button className="cursor-pointer px-6 sm:px-8 py-3 text-sm sm:text-base border border-white text-white rounded-lg hover:bg-white hover:text-black transition duration-300 w-full sm:w-auto">
                 Get Started
               </button>
             </div>
