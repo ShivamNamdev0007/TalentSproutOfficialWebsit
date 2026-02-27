@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Navbar />
       <HeroSection />
-      <PartnersSection/>
+      <PartnersSection/><br/>
       <OurServices />
       <CounterSection/>
       <WhyTalentSprout />
