@@ -28,7 +28,7 @@ export default function OurServices() {
     {
       title: "Staffing Solutions",
       image: "/Staffing.jpg",
-      desc: "Our staffing solutions are designed to support dynamic workforce needs with speed and efficiency. We offer flexible staffing models including temporary, contract, and permanent hiring. Our approach helps businesses",
+      desc: "Our staffing solutions are designed to support dynamic workforce needs with speed and efficiency. We offer flexible staffing models including temporary, contract, and permanent hiring.",
     },
     {
       title: "POSH Traning & Compliance",
@@ -38,8 +38,7 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="py-16 px-4 ">
-      
+    <section className="py-16 px-4">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-orange-500 mb-4">
           Our Services
@@ -51,7 +50,6 @@ export default function OurServices() {
       </div>
 
       <div className="max-w-6xl mx-auto relative">
-
         <Swiper
           modules={[Pagination, Autoplay]}
           spaceBetween={20}
@@ -72,7 +70,6 @@ export default function OurServices() {
           {services.map((service, index) => (
             <SwiperSlide key={index}>
               <div className="group relative h-105 rounded-2xl overflow-hidden border border-gray-700 hover:border-orange-500 transition-all duration-300">
-                
                 <Image
                   src={service.image}
                   alt={service.title}
@@ -83,7 +80,6 @@ export default function OurServices() {
                 <div className="absolute inset-0 bg-black/50 group-hover:bg-black/80 transition-all duration-300" />
 
                 <div className="absolute inset-0 flex flex-col items-center text-center px-6 justify-end group-hover:justify-center transition-all duration-500">
-                  
                   <h3 className="text-white text-2xl font-semibold mb-4 transition-all duration-500 group-hover:-translate-y-6">
                     {service.title}
                   </h3>
@@ -106,19 +102,15 @@ export default function OurServices() {
                       </span>
                     </button>
                   </div>
-
                 </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
 
-        {/* Pagination Dots */}
         <div className="custom-pagination mt-12 flex justify-center"></div>
-
       </div>
 
-      {/* DOT COLOR FIX */}
       <style jsx global>{`
         .custom-pagination {
           position: relative;
@@ -137,7 +129,6 @@ export default function OurServices() {
           background-color: #f97316 !important;
         }
       `}</style>
-
     </section>
   );
 }

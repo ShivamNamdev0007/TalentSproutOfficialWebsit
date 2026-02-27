@@ -32,7 +32,7 @@ export default function WhyChooseTalentSprout() {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-gray-100 to-white py-20 px-6">
+    <section className="bg-linear-to-b from-gray-100 to-white py-20 px-6">
       <div className="max-w-7xl mx-auto text-center">
         
         {/* Heading */}

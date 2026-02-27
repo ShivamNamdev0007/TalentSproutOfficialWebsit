@@ -72,14 +72,14 @@ export default function BFSIRecruitmentProcess() {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical Line */}
-          <div className="hidden md:block absolute left-6 top-0 w-1 h-full bg-gradient-to-b from-orange-500 to-gray-300"></div>
+          <div className="hidden md:block absolute left-6 top-0 w-1 h-full bg-linear-to-b from-orange-500 to-gray-300"></div>
 
           <div className="space-y-12">
             {steps.map((item, index) => (
               <div key={index} className="relative flex flex-col md:flex-row md:items-start">
 
                 {/* Icon */}
-                <div className="relative z-10 flex-shrink-0">
+                <div className="relative z-10 shrink-0">
                   <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-900 text-orange-500 shadow-lg">
                     {item.icon}
                   </div>
