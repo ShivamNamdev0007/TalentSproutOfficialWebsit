@@ -42,9 +42,15 @@ function PartnersSection() {
         {/* ===== DESKTOP LAYOUT ===== */}
         <div className="hidden md:flex relative justify-center items-center">
           {/* Center Image */}
-          <div className="relative w-[380px] h-[450px] lg:w-[500px] lg:h-[520px] rounded-full overflow-hidden z-10">
+          <div className="relative 
+    w-70 h-95 
+    md:w-85 md:h-115 
+    lg:w-105 lg:h-140 
+    overflow-hidden z-10
+    shadow-2xl
+    rounded-[58%_42%_45%_55%/65%_60%_40%_35%]">
             <Image
-              src="/herosBackgroundImg.png"
+              src="/image1.png"
               alt="handshake"
               fill
               priority
@@ -78,7 +84,7 @@ function PartnersSection() {
           />
           <Card
             title="Educational institutions"
-            position="-bottom-20 justify-center -translate-x-1/2"
+            position="-bottom-40 justify-center -translate-x-1"
             direction="bottom"
             visible={visible}
           />

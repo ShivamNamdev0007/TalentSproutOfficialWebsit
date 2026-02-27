@@ -27,8 +27,28 @@ const testimonials = [
     company: "CloudScale Startup",
     text: "Best IT recruitment agency we've partnered with. Highly recommended for startups!",
   },
+   {
+    id: 4,
+    name: "Michael Chen",
+    role: "CTO",
+    company: "CloudScale Startup",
+    text: "Best IT recruitment agency we've partnered with. Highly recommended for startups!",
+  },
+   {
+    id: 5,
+    name: "Michael Chen",
+    role: "CTO",
+    company: "CloudScale Startup",
+    text: "Best IT recruitment agency we've partnered with. Highly recommended for startups!",
+  },
+   {
+    id: 6,
+    name: "Michael Chen",
+    role: "CTO",
+    company: "CloudScale Startup",
+    text: "Best IT recruitment agency we've partnered with. Highly recommended for startups!",
+  },
   // Add more here anytime 👇
-  // { id: 4, ... }
 ];
 
 export default function TestimonialSection() {
@@ -37,10 +57,10 @@ export default function TestimonialSection() {
       <div className="max-w-7xl mx-auto px-6  text-justify">
         
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold">
+        <h2 className="text-4xl md:text-5xl font-bold text-center">
           What Our <span className="text-orange-500">Clients Say</span>
         </h2>
-        <p className="mt-4 text-gray-600">
+        <p className="mt-4 text-gray-600 text-center">
           Trusted by leading companies for tech talent acquisition
         </p>
 

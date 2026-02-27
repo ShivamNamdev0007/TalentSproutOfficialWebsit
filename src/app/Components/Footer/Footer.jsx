@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
 
@@ -22,16 +23,19 @@ export default function Footer() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-32 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 xl:gap-10">
-          
+
           {/* Logo & About */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <div className="bg-white rounded-md px-4 py-2">
-                <img
-                  src="/logo.jpg"
-                  alt="Talent Sprout"
-                  className="h-12 w-auto"
-                />
+                {/* ✅ Logo Clickable */}
+                <Link href="/" className="inline-block">
+                  <img
+                    src="/logo.jpg"
+                    alt="Talent Sprout"
+                    className="h-12 w-auto cursor-pointer"
+                  />
+                </Link>
               </div>
             </div>
 
@@ -55,9 +59,9 @@ export default function Footer() {
           {/* Services */}
           <div className="space-y-6">
             <h3 className="text-lg font-semibold tracking-wide uppercase relative inline-block cursor-pointer
-after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 
-after:bg-[#F05A28] after:transition-all after:duration-300 
-hover:after:w-full">
+                          after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 
+                        after:bg-[#F05A28] after:transition-all after:duration-300 
+                          hover:after:w-full">
               Services
             </h3>
 
@@ -74,12 +78,10 @@ hover:after:w-full">
                   key={index}
                   className="group flex items-center gap-2 cursor-pointer overflow-hidden"
                 >
-                  {/* Arrow */}
                   <span className="text-[#F05A28] text-sm transform -translate-x-3 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">
                     &gt;
                   </span>
 
-                  {/* Text */}
                   <span className="text-gray-400 text-sm transition-all duration-300 group-hover:text-[#F05A28] group-hover:translate-x-1">
                     {item}
                   </span>
@@ -91,9 +93,9 @@ hover:after:w-full">
           {/* Company */}
           <div className="space-y-6">
             <h3 className="text-lg font-semibold tracking-wide uppercase relative inline-block cursor-pointer
-after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 
-after:bg-[#F05A28] after:transition-all after:duration-300 
-hover:after:w-full">
+                            after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 
+                          after:bg-[#F05A28] after:transition-all after:duration-300 
+                            hover:after:w-full">
               Company
             </h3>
 
@@ -118,9 +120,9 @@ hover:after:w-full">
           {/* Contact */}
           <div className="space-y-6">
             <h3 className="text-lg font-semibold tracking-wide uppercase relative inline-block cursor-pointer
-after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 
-after:bg-[#F05A28] after:transition-all after:duration-300 
-hover:after:w-full">
+                          after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 
+                        after:bg-[#F05A28] after:transition-all after:duration-300 
+                          hover:after:w-full">
               Contact Us
             </h3>
 

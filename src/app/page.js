@@ -1,11 +1,11 @@
+
 import Footer from "./Components/Footer/Footer";
-import GrowTogetherCTA from "./Components/Landingpage/GrowTogetherCTA";
+import CounterSection from "./Components/Landingpage/CounterSection";
 import HeroSection from "./Components/Landingpage/HeroSection";
-import MissionVision from "./Components/Landingpage/MissionVision";
+import HeroSection2 from "./Components/Landingpage/HeroSection2";
 import OurServices from "./Components/Landingpage/OurServices";
 import PartnersSection from "./Components/Landingpage/PartnersSection";
-import StatsSection from "./Components/Landingpage/StatsSection";
-import WhoWeAre from "./Components/Landingpage/WhoWeAre";
+import TestimonialSection from "./Components/Landingpage/TestimonialSection";
 import WhyTalentSprout from "./Components/Landingpage/WhyChooseTalentSprout";
 import Navbar from "./Components/Navbar/Navbar";
 
@@ -14,15 +14,13 @@ export default function Home() {
     <>
       <Navbar />
       <HeroSection />
-      <PartnersSection></PartnersSection>
-      {/* <WhoWeAre/> */}
-      {/* <MissionVision/> */}
+      <PartnersSection/>
       <OurServices />
-      {/* <StatsSection/> */}
+      <CounterSection/>
       <WhyTalentSprout />
-      {/* <GrowTogetherCTA/> */}
-      <br></br>
-      <Footer />
+      <TestimonialSection/>
+      <HeroSection2/>
+      <Footer/>
     </>
   );
 }
