@@ -57,9 +57,8 @@ export default function OurServices() {
           pagination={{
             clickable: true,
             el: ".custom-pagination",
-            renderBullet: function (index, className) {
-              return `<span class="${className}"></span>`;
-            },
+            renderBullet: (index, className) =>
+              `<span class="${className}"></span>`,
           }}
           autoplay={{ delay: 3000 }}
           breakpoints={{
@@ -84,13 +83,7 @@ export default function OurServices() {
                     {service.title}
                   </h3>
 
-                  <div
-                    className="
-                      opacity-0 max-h-0 overflow-hidden
-                      group-hover:opacity-100 group-hover:max-h-125
-                      transition-all duration-500 ease-out
-                    "
-                  >
+                  <div className="opacity-0 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-125 transition-all duration-500 ease-out">
                     <p className="text-gray-200 text-sm mb-6 leading-relaxed line-clamp-5">
                       {service.desc}
                     </p>
@@ -111,24 +104,27 @@ export default function OurServices() {
         <div className="custom-pagination mt-12 flex justify-center"></div>
       </div>
 
-      <style jsx global>{`
-        .custom-pagination {
-          position: relative;
-          z-index: 50;
-        }
+      {/* Normal style tag instead of styled-jsx */}
+      <style>
+        {`
+          .custom-pagination {
+            position: relative;
+            z-index: 50;
+          }
 
-        .custom-pagination .swiper-pagination-bullet {
-          width: 12px;
-          height: 12px;
-          background-color: #6b7280 !important;
-          opacity: 1 !important;
-          margin: 0 6px !important;
-        }
+          .custom-pagination .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background-color: #6b7280 !important;
+            opacity: 1 !important;
+            margin: 0 6px !important;
+          }
 
-        .custom-pagination .swiper-pagination-bullet-active {
-          background-color: #f97316 !important;
-        }
-      `}</style>
+          .custom-pagination .swiper-pagination-bullet-active {
+            background-color: #f97316 !important;
+          }
+        `}
+      </style>
     </section>
   );
 }
