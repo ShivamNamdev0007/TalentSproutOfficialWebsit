@@ -57,7 +57,7 @@ export default function TestimonialSection() {
       <div className="max-w-7xl mx-auto px-6  text-justify">
         
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-black">
           What Our <span className="text-orange-500">Clients Say</span>
         </h2>
         <p className="mt-4 text-gray-600 text-center">

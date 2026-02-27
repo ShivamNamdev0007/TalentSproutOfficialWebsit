@@ -30,7 +30,7 @@ const leadershipData = [
 
 export default function LeadershipSection() {
   return (
-    <section className="py-20 md:py-28 relative overflow-hidden">
+    <section className="py-20 md:py-28 relative overflow-hidden bg-white -text-black">
       <div className="max-w-7xl mx-auto px-4 text-center">
 
         {/* Heading */}
