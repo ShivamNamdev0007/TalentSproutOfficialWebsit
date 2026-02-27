@@ -15,8 +15,8 @@ export default function Navbar() {
       name: "Services",
       path: "/services",
       dropdown: [
-        { name: "IT & GCC Recruitment", path: "/services/it-gcc" },
-        { name: "BFSI & Banking Recruitment", path: "/services/bfsi" },
+        { name: "IT & GCC Recruitment", path: "/services/ItGcc" },
+        { name: "BFSI & Banking Recruitment", path: "/services/BFSIPage" },
         { name: "Empathy & Personality", path: "/services/seo" },
         { name: "Staffing Solutions", path: "/services/staffing" },
         { name: "POSH Training & Compliance", path: "/services/posh" },
