@@ -6,6 +6,14 @@ import RolesSection from '@/app/Components/Services/ItGcc/RolesSection'
 import CallToActionSection from '@/app/Components/about/CallToActionSection'
 import RecruitmentProcess from '@/app/Components/Services/ItGcc/RecruitmentProcess'
 import WhyChooseTalentSprout from '@/app/Components/Services/ItGcc/WhyChooseTalentSprout'
+export const metadata = {
+  title: "IT GCC Hiring & Recruitment Services ",
+  description:
+    "IT GCC hiring and recruitment services to help global capability centers build high-performing technology teams in India.",
+  alternates: {
+    canonical: "https://www.talentsprout.in/services/it-gcc-hiring"
+  }
+}
 
 export default function ItGccPage() {
   return (

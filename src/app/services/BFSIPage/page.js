@@ -8,6 +8,14 @@ import BFSIRecruitmentProcess from '@/app/Components/Services/BFSI/BFSIRecruitme
 import WhyChooseTalentSproutBsfi from '@/app/Components/Services/BFSI/WhyChooseTalentSproutBsfi'
 import React from 'react'
 
+export const metadata = {
+  title: "BFSI Recruitment & Staffing Services",
+  description:
+    "Specialized BFSI recruitment and staffing services to help banks, financial institutions, and insurance companies hire top talent in India.",
+  alternates: {
+    canonical: "https://www.talentsprout.in/services/bfsi-recruitment"
+  }
+}
 export default function BFSIPage() {
   return (
     <div>
