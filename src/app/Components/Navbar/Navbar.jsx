@@ -19,7 +19,7 @@ export default function Navbar() {
         { name: "BFSI & Banking Recruitment", path: "/services/BFSIPage" },
         { name: "Empathy & Personality", path: "/services/Empathy" },
         { name: "Staffing Solutions", path: "/services/Staffing" },
-        { name: "POSH Training & Compliance", path: "/services/posh" },
+        { name: "POSH Training & Compliance", path: "/services/POSHTraning" },
       ],
     },
     { name: "About ", path: "/about" },
