@@ -61,7 +61,7 @@ export default function RecruitmentProcess() {
 
       <div className="relative max-w-5xl mx-auto">
         {/* Vertical Line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-[2px] bg-blue-400 h-full hidden md:block"></div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-blue-400 h-full hidden md:block"></div>
 
         <div className="space-y-16">
           {steps.map((step, index) => (
@@ -75,7 +75,7 @@ export default function RecruitmentProcess() {
             >
               {/* Card */}
               <div
-                className={`bg-white shadow-md rounded-xl p-8 w-full md:w-[420px] ${
+                className={`bg-white shadow-md rounded-xl p-8 w-full md:w-105 ${
                   step.align === "left"
                     ? "md:mr-auto"
                     : "md:ml-auto"

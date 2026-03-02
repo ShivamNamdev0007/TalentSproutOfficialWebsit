@@ -44,7 +44,7 @@ export default function TrainingMethodology() {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-[#f3f4f6] to-[#f8ede6] py-16 md:py-24 px-4">
+    <section className="bg-linear-to-r from-[#f3f4f6] to-[#f8ede6] py-16 md:py-24 px-4">
       <div className="max-w-7xl mx-auto">
         
         {/* Heading */}
@@ -97,7 +97,7 @@ export default function TrainingMethodology() {
 
           {/* RIGHT SIDE IMAGE */}
           <div className="relative flex justify-center">
-            <div className="relative w-[350px] sm:w-[400px] md:w-[450px]">
+            <div className="relative w-87.5 sm:w-100 md:w-112.5">
               
               {/* Arrow Border (Right side hidden) */}
               <div
