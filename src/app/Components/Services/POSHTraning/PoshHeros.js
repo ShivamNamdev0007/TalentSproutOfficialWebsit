@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function PoshHeros() {
   return (
     <section className="relative w-full min-h-[85vh] flex items-center justify-center text-center text-white overflow-hidden rounded-b-3xl">
@@ -33,15 +35,17 @@ export default function PoshHeros() {
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           
           {/* Primary Button */}
+           <Link href="/contact">
           <button className=" cursor-pointer px-8 py-3 rounded-lg bg-orange-500 hover:bg-orange-600 transition duration-300 font-medium">
             Hire IT Talent
           </button>
-
+        </Link>
           {/* Secondary Button */}
+           <Link href="/contact">
           <button className="cursor-pointer px-8 py-3 rounded-lg border border-white text-white hover:bg-white hover:text-black transition duration-300 font-medium">
             Request IT Hiring Support
           </button>
-
+          </Link>
         </div>
 
       </div>

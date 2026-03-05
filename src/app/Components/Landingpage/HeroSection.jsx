@@ -50,7 +50,7 @@ function HeroSection() {
               </Link>
 
               <Link
-                href="/services"
+                href="/services/ItGcc"
                 className="w-full sm:w-auto text-center rounded-lg border border-orange-500 px-6 py-3 font-semibold text-orange-500 transition hover:bg-orange-500 hover:text-white"
               >
                 Explore Services

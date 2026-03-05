@@ -31,7 +31,7 @@ export default function WhyChooseUsEmpathy() {
             {features.map((item, index) => (
               <div
                 key={index}
-                className="bg-gray-100 rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition duration-300"
+                className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition duration-300"
               >
                 <h3 className="text-xl md:text-2xl font-semibold text-[#0f172a] mb-4">
                   {item.title}

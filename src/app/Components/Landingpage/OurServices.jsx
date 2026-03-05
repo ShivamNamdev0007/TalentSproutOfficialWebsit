@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -13,26 +14,31 @@ export default function OurServices() {
     {
       title: "IT & GCC Recruitment",
       image: "/it&Gcc.jpg",
+      link: "/services/ItGcc",
       desc: "We specialize in IT recruitment for Global Capability Centers (GCCs), startups,and enterprises Our team connects organizations with highly skilled tech professionals across emerging and niche technologies.",
     },
     {
       title: "BFSI & Banking Recruitment",
       image: "/BFSI.jpg",
+      link: "/services/BFSIPage",
       desc: "We provide specialized recruitment solutions for the BFSI sector with a strong focus on domain expertise. Our team sources highly qualified professionals across banking, financial services, insurance, and fintech roles.",
     },
     {
       title: "Empathy & Personality Development",
       image: "/Emapthy.jpg",
+      link: "/services/Empathy",
       desc: "Training programs designed to enhance emotional intelligence, communication skills, and workplace leadership.",
     },
     {
       title: "Staffing Solutions",
       image: "/Staffing.jpg",
+      link: "/services/staffing",
       desc: "Our staffing solutions are designed to support dynamic workforce needs with speed and efficiency. We offer flexible staffing models including temporary, contract, and permanent hiring.",
     },
     {
       title: "POSH Traning & Compliance",
       image: "/PoshTraning.jpg",
+      link: "/services/POSHTraning",
       desc: "We deliver POSH (Prevention of Sexual Harassment) training aligned with statutory guidelines.",
     },
   ];
@@ -40,8 +46,8 @@ export default function OurServices() {
   return (
     <section className="py-16 px-4">
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold text-orange-500 mb-4">
-          Our Services
+        <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+          Our <span className="text-4xl md:text-5xl font-bold text-orange-500 mb-4"> Services</span>
         </h2>
         <p className="text-gray-400 text-base md:text-lg">
           From smart hiring to impactful training, we deliver solutions that
@@ -88,12 +94,15 @@ export default function OurServices() {
                       {service.desc}
                     </p>
 
-                    <button className="relative overflow-hidden border border-orange-500 text-orange-500 px-8 py-3 rounded-lg transition hover:bg-orange-500 hover:text-black">
-                      <span className="flex items-center justify-center gap-2">
-                        Read More
-                        <ArrowRight className="w-4 h-4" />
-                      </span>
-                    </button>
+                    <Link href={service.link}>
+                      <button className=" cursor-pointer relative overflow-hidden border border-orange-500 text-orange-500 px-8 py-3 rounded-lg transition hover:bg-orange-500 hover:text-black">
+                        <span className="flex items-center justify-center gap-2">
+                          Read More
+                          <ArrowRight className="w-4 h-4" />
+                        </span>
+                      </button>
+                    </Link>
+
                   </div>
                 </div>
               </div>
@@ -104,7 +113,6 @@ export default function OurServices() {
         <div className="custom-pagination mt-12 flex justify-center"></div>
       </div>
 
-      {/* Normal style tag instead of styled-jsx */}
       <style>
         {`
           .custom-pagination {

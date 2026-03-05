@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export default function CallToActionSection() {
@@ -34,15 +35,19 @@ export default function CallToActionSection() {
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           
           {/* Contact Button */}
-          <button className="px-8 py-3 rounded-lg border border-white text-white hover:bg-white hover:text-black transition duration-300">
-            Contact Us
-          </button>
+          <Link href="/contact">
+            <button className=" cursor-pointer px-8 py-3 rounded-lg border border-white text-white hover:bg-white hover:text-black transition duration-300">
+              Contact Us
+            </button>
+          </Link>
 
           {/* Get Started Button */}
-          <button className="px-8 py-3 rounded-lg bg-white text-orange-500 font-medium flex items-center gap-2 hover:bg-orange-500 hover:text-white transition duration-300">
-            Get Started
-            <ArrowRight size={18} />
-          </button>
+          <Link href="/contact">
+            <button className="cursor-pointer px-8 py-3 rounded-lg bg-white text-orange-500 font-medium flex items-center gap-2 hover:bg-orange-500 hover:text-white transition duration-300">
+              Get Started
+              <ArrowRight size={18} />
+            </button>
+          </Link>
 
         </div>
       </div>

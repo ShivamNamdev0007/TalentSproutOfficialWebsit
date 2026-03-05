@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function BfsiHeroSection() {
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center text-center px-6">
@@ -29,13 +31,16 @@ export default function BfsiHeroSection() {
 
         {/* Buttons */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="bg-orange-600 hover:bg-orange-700 transition px-8 py-3 rounded-lg font-semibold text-white">
+        <Link href="/contact">
+          <button className=" cursor-pointer bg-orange-600 hover:bg-orange-700 transition px-8 py-3 rounded-lg font-semibold text-white">
             Hire BFSI Talent
           </button>
-
-          <button className="border border-white hover:bg-white hover:text-black transition px-8 py-3 rounded-lg font-semibold">
+          </Link>
+    <Link href="/contact">
+          <button className="cursor-pointer border border-white hover:bg-white hover:text-black transition px-8 py-3 rounded-lg font-semibold">
             Book a Training Session
           </button>
+          </Link>
         </div>
 
         {/* Bottom Stats */}
