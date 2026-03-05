@@ -27,21 +27,21 @@ const testimonials = [
     company: "CloudScale Startup",
     text: "Best IT recruitment agency we've partnered with. Highly recommended for startups!",
   },
-   {
+  {
     id: 4,
     name: "Michael Chen",
     role: "CTO",
     company: "CloudScale Startup",
     text: "Best IT recruitment agency we've partnered with. Highly recommended for startups!",
   },
-   {
+  {
     id: 5,
     name: "Michael Chen",
     role: "CTO",
     company: "CloudScale Startup",
     text: "Best IT recruitment agency we've partnered with. Highly recommended for startups!",
   },
-   {
+  {
     id: 6,
     name: "Michael Chen",
     role: "CTO",
@@ -54,8 +54,8 @@ const testimonials = [
 export default function TestimonialSection() {
   return (
     <section className="bg-gray-100 py-20">
-      <div className="max-w-7xl mx-auto px-6  text-justify">
-        
+      <div className="max-w-7xl mx-auto px-3 md:px-6 text-justify">
+        {" "}
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-center text-black">
           What Our <span className="text-orange-500">Clients Say</span>
@@ -63,9 +63,8 @@ export default function TestimonialSection() {
         <p className="mt-4 text-gray-600 text-center">
           Trusted by leading companies for tech talent acquisition
         </p>
-
         {/* Slider */}
-        <div className="mt-16">
+        <div className="mt-10">
           <Swiper
             modules={[Pagination, Autoplay]}
             spaceBetween={30}
@@ -78,13 +77,12 @@ export default function TestimonialSection() {
             }}
           >
             {testimonials.map((item) => (
-              <SwiperSlide key={item.id}>
+              <SwiperSlide className="py-12" key={item.id}>
                 <TestimonialCard item={item} />
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-
       </div>
     </section>
   );
@@ -93,13 +91,10 @@ export default function TestimonialSection() {
 function TestimonialCard({ item }) {
   return (
     <div className="bg-white p-8 rounded-2xl shadow-lg h-75 flex flex-col justify-between">
-      
       {/* Top Content */}
       <div>
         {/* Stars */}
-        <div className="flex mb-4 text-orange-500 text-lg">
-          {"★★★★★"}
-        </div>
+        <div className="flex mb-4 text-orange-500 text-lg">{"★★★★★"}</div>
 
         {/* Text */}
         <p className="text-gray-600 leading-relaxed line-clamp-6">
@@ -115,12 +110,8 @@ function TestimonialCard({ item }) {
 
         <div>
           <h4 className="font-semibold">{item.name}</h4>
-          <p className="text-sm text-gray-500">
-            {item.role}
-          </p>
-          <p className="text-sm text-orange-500">
-            {item.company}
-          </p>
+          <p className="text-sm text-gray-500">{item.role}</p>
+          <p className="text-sm text-orange-500">{item.company}</p>
         </div>
       </div>
     </div>
