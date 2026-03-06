@@ -47,9 +47,9 @@ function PartnersSection() {
           {/* Center Image */}
           <div
             className="relative 
-            w-[280px] h-[380px] 
-            md:w-[340px] md:h-[460px] 
-            lg:w-[420px] lg:h-[560px] 
+            w-70 h-95 
+            md:w-85 md:h-115 
+            lg:w-115 lg:h-140 
             overflow-hidden z-10 shadow-2xl
             rounded-[58%_42%_45%_55%/65%_60%_40%_35%]"
           >
@@ -64,7 +64,7 @@ function PartnersSection() {
 
           <Card
             title="Corporates"
-            image="/icons/corporate.png"
+            image="/corporate.png"
             position="top-5 -left-10"
             direction="left"
             visible={visible}
@@ -72,7 +72,7 @@ function PartnersSection() {
 
           <Card
             title="Startups"
-            image="/icons/startup.png"
+            image="/startups.png"
             position="top-5 -right-10"
             direction="right"
             visible={visible}
@@ -80,7 +80,7 @@ function PartnersSection() {
 
           <Card
             title="GCCs"
-            image="/icons/gcc.png"
+            image="/gcc.png"
             position="bottom-10 -left-10"
             direction="left"
             visible={visible}
@@ -88,7 +88,7 @@ function PartnersSection() {
 
           <Card
             title="BFSI organizations"
-            image="/icons/bfsi.png"
+            image="/BFSI.png"
             position="bottom-10 -right-10"
             direction="right"
             visible={visible}
@@ -96,7 +96,7 @@ function PartnersSection() {
 
           <Card
             title="Educational institutions"
-            image="/icons/education.png"
+            image="/education.png"
             position="bottom-[-120px] left-1/2"
             direction="bottom"
             visible={visible}
@@ -128,7 +128,7 @@ function Card({ title, image, position, direction, visible }) {
       } ${animation[direction]}`}
     >
       {/* Icon */}
-      <div className="relative w-10 h-10">
+      <div className="relative w-12 h-12">
         <Image src={image} alt={title} fill className="object-contain" />
       </div>
 

@@ -50,7 +50,23 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="w-full py-16 px-6 md:px-16 pt-25">
+    <section className="w-full py-16 px-6 md:px-16 pt-24 mt-6">
+
+      {/* HEADING */}
+      <div className="text-center mb-16 max-w-3xl mx-auto">
+
+        <h2 className="text-4xl md:text-5xl font-bold mb-3">
+          <span className="text-[#0B1C2D]">Contact & </span>
+          <span className="text-[#F05A28]">Support</span>
+        </h2>
+
+        <p className="text-gray-500 text-lg">
+          We're here to assist you. Whether it's inquiries, consultations,
+          or support, don't <br></br> hesitate to reach out.
+        </p>
+
+      </div>
+
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
 
         {/* LEFT SIDE - FORM */}
@@ -60,14 +76,8 @@ export default function ContactSection() {
             Get in Touch with Us
           </h2>
 
-          <form
-            className="space-y-6"
-            onSubmit={(e) => {
-              e.preventDefault();
-              // Later connect this to AWS API
-              console.log("Form Submitted");
-            }}
-          >
+          <form className="space-y-6" onSubmit={handleSubmit}>
+
             {/* Name */}
             <div>
               <label className="block text-[#0B1C2D] font-medium mb-2">
@@ -75,6 +85,9 @@ export default function ContactSection() {
               </label>
               <input
                 type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 required
                 placeholder="Your name"
                 className="w-full h-12 px-4 rounded-lg bg-gray-200 outline-none"
@@ -88,6 +101,9 @@ export default function ContactSection() {
               </label>
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 required
                 placeholder="example@company.com"
                 className="w-full h-12 px-4 rounded-lg bg-gray-200 outline-none"
@@ -101,6 +117,9 @@ export default function ContactSection() {
               </label>
               <input
                 type="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
                 required
                 placeholder="+11 000 000 000"
                 className="w-full h-12 px-4 rounded-lg bg-gray-200 outline-none"
@@ -113,6 +132,9 @@ export default function ContactSection() {
                 Message *
               </label>
               <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 required
                 placeholder="Leave us a Message"
                 rows="5"
@@ -123,52 +145,54 @@ export default function ContactSection() {
             {/* Button */}
             <button
               type="submit"
-              className="w-full h-12 bg-[#0B1C2D] text-white rounded-lg font-semibold hover:opacity-90 transition"
+              disabled={loading}
+              className=" cursor-pointer w-full h-12 bg-white text-black rounded-lg font-semibold hover:bg-gray-200 transition"
             >
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </button>
+
           </form>
         </div>
 
         {/* RIGHT SIDE - CONTACT DETAILS */}
-        <div className="text-white flex flex-col justify-center space-y-10 max-w-lg">
+        <div className="text-[#0B1C2D] flex flex-col justify-center space-y-10 max-w-lg">
 
           <div>
             <h3 className="text-xl font-semibold mb-2">Chat to Support</h3>
-            <p className="text-gray-800 mb-2">
+            <p className="text-gray-600 mb-2">
               Chat to our staff 24/7 for instant access to support
             </p>
-            <a href="#" className="underline text-white">
+            <a href="#" className="underline text-[#0B1C2D]">
               Start Live Chat
             </a>
           </div>
 
-          <hr className="border-gray-700" />
+          <hr className="border-gray-300" />
 
           <div>
             <h3 className="text-xl font-semibold mb-2">Call Us</h3>
-            <p className="text-gray-700 mb-2">
+            <p className="text-gray-600 mb-2">
               Monday - Friday, 9:00 AM – 6:00 PM
             </p>
             <p className="underline">+44 161 987 6543</p>
             <p className="underline">+44 161 987 6543</p>
           </div>
 
-          <hr className="border-gray-700" />
+          <hr className="border-gray-300" />
 
           <div>
             <h3 className="text-xl font-semibold mb-2">Email Support</h3>
-            <p className="text-gray-700 mb-2">
+            <p className="text-gray-600 mb-2">
               Email us & we will get back to you within 24 hours
             </p>
             <p className="underline">info@talentsprout.com</p>
           </div>
 
-          <hr className="border-gray-700" />
+          <hr className="border-gray-300" />
 
           <div>
             <h3 className="text-xl font-semibold mb-2">Manchester, UK</h3>
-            <p className="text-gray-700 mb-2">
+            <p className="text-gray-600 mb-2">
               Serving clients across all major Indian cities
             </p>
             <p className="underline">
