@@ -55,19 +55,19 @@ export default function Footer() {
             </p>
 
             <div className="flex gap-4">
-              <a href="https://facebook.com" target="_blank">
+              <a href="https://www.facebook.com/share/1BLXX5JgEt/" target="_blank">
                 <div className="w-9 h-9 bg-white rounded-full flex items-center justify-center text-[#1877F2] cursor-pointer transition hover:scale-105">
                   <FaFacebookF size={14} />
                 </div>
               </a>
 
-              <a href="https://linkedin.com" target="_blank">
+              <a href="https://www.linkedin.com/company/chhavi-sharma-3807aa315/posts/?feedView=all" target="_blank">
                 <div className="w-9 h-9 bg-white rounded-full flex items-center justify-center text-[#0A66C2] cursor-pointer transition hover:scale-105">
                   <FaLinkedinIn size={14} />
                 </div>
               </a>
 
-              <a href="https://instagram.com" target="_blank">
+              <a href="https://www.instagram.com/talentsprout2?igsh=ZmZzZHA3cGgyMTJz" target="_blank">
                 <div className="w-9 h-9 bg-white rounded-full flex items-center justify-center text-[#E1306C] cursor-pointer transition hover:scale-105">
                   <FaInstagram size={14} />
                 </div>
@@ -103,10 +103,10 @@ export default function Footer() {
 
           {/* Company */}
           <div className="space-y-6">
-            <h2 className="text-lg font-semibold tracking-wide uppercase relative inline-block cursor-pointer
-                            after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 
-                          after:bg-[#F05A28] after:transition-all after:duration-300 
-                            hover:after:w-full">
+            <h2 className={`text-lg font-semibold tracking-wide uppercase relative inline-block cursor-pointer
+after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0
+after:bg-[#F05A28] after:transition-all after:duration-300
+hover:after:w-full`}>
               Company
             </h2>
 
@@ -153,7 +153,7 @@ export default function Footer() {
                   &gt;
                 </span>
                 <p className="text-gray-400 text-sm transition-all duration-300 group-hover:text-[#F05A28] group-hover:translate-x-1">
-                  chhavi.sharma@talentsprout.in
+                  chhavi1.sharma@talentsprout.in
                 </p>
               </div>
 
@@ -176,12 +176,16 @@ export default function Footer() {
           <p>© 2026 Talent Sprout. All rights reserved.</p>
 
           <div className="flex gap-6 mt-4 md:mt-0">
+          <Link href="/PrivacyPolicy">
             <p className="cursor-pointer hover:text-white transition">
               Privacy Policy
             </p>
-            <p className="cursor-pointer hover:text-white transition">
+            </Link>
+            <Link href="/Tearms">           
+             <p className="cursor-pointer hover:text-white transition">
               Terms of Service
             </p>
+            </Link>
           </div>
         </div>
       </div>
