@@ -8,7 +8,7 @@ export default function TermsConditions() {
           Last updated: February 10, 2025
         </p>
 
-        <h1 className="text-3xl sm:text-4xl font-bold text-blue-500 mb-6">
+        <h1 className="text-3xl sm:text-4xl font-bold text-blue-900 mb-6">
           Terms & Conditions
         </h1>
 
@@ -182,7 +182,7 @@ export default function TermsConditions() {
 function Section({ title, children }) {
   return (
     <div className="mb-10">
-      <h2 className="text-xl sm:text-2xl font-semibold text-blue-400 mb-4">
+      <h2 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-4">
         {title}
       </h2>
 

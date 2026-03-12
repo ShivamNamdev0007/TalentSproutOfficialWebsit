@@ -35,7 +35,7 @@ function PartnersSection() {
           <MobileCard title="Corporates" image="/corporate.png" />
           <MobileCard title="Startups" image="/startups.png" />
           <MobileCard title="GCCs" image="/gcc.png" />
-          <MobileCard title="BFSI organizations" image="/Bfsi.png" />
+          <MobileCard title="BFSI organizations" image="/bfsi.png" />
           <MobileCard
             title="Educational institutions"
             image="/education.png"
