@@ -10,7 +10,7 @@ export default function ContectPage() {
     <div>
     <Navbar/>
     <ContactSection/>
-    <CallToActionSection/>
+    {/* <CallToActionSection/> */}
     <br/>
     <LocationMap/>
     <br/>
