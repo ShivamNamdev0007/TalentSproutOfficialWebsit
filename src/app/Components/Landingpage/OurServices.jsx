@@ -246,15 +246,15 @@ export default function OurServices() {
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
 
-                <div className="absolute inset-0  group-hover:bg-black/80 transition-all duration-300" />
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/80 transition-all duration-300" />
 
                 <div className="absolute inset-0 flex flex-col items-center text-center px-6 justify-end group-hover:justify-center transition-all duration-500">
-                  <h3 className="text-black text-2xl font-semibold mb-4 transition-all duration-500 group-hover:-translate-y-6">
+                  <h3 className="text-white text-2xl font-semibold mb-4 transition-all duration-500 group-hover:-translate-y-6">
                     {service.title}
                   </h3>
 
                   <div className="opacity-0 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-125 transition-all duration-500 ease-out">
-                    <p className="text-gray-800 text-sm mb-6 leading-relaxed line-clamp-5">
+                    <p className="text-gray-200 text-sm mb-6 leading-relaxed line-clamp-5">
                       {service.desc}
                     </p>
 
