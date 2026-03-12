@@ -50,7 +50,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="w-full py-16 px-6 md:px-16 pt-24 mt-6">
+    <section className="w-full py-16 px-6 md:px-16 pt-24 mt-6 bg-white">
 
       {/* HEADING */}
       <div className="text-center mb-16 max-w-3xl mx-auto">
