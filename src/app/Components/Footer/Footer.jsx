@@ -181,7 +181,7 @@ hover:after:w-full`}>
               Privacy Policy
             </p>
             </Link>
-            <Link href="/Tearms">           
+            <Link href="/Terms">           
              <p className="cursor-pointer hover:text-white transition">
               Terms of Service
             </p>
