@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection2() {
   return (
@@ -43,9 +44,11 @@ export default function HeroSection2() {
             </p>
 
             <div className="mt-8">
+            <Link href="/contact">
               <button className="cursor-pointer px-6 sm:px-8 py-3 text-sm sm:text-base border border-white text-white rounded-lg hover:bg-white hover:text-black transition duration-300 w-full sm:w-auto">
                 Get Started
               </button>
+              </Link>
             </div>
 
           </div>

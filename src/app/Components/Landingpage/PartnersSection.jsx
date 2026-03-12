@@ -46,13 +46,13 @@ function PartnersSection() {
         <div className="hidden md:flex relative justify-center items-center">
           {/* Center Image */}
           <div
-            className="relative 
-                 w-72 h-96 
-                md:w-80 md:h-112 
-                lg:w-md lg:h-140 
-                overflow-hidden z-10 shadow-2xl
-                rounded-[58%_42%_45%_55%/65%_60%_40%_35%]"
-          >
+              className="relative
+           w-72 h-96
+           md:w-80 md:h-96
+           lg:w-96 lg:h-136
+           overflow-hidden z-10 shadow-2xl
+           rounded-[58%_42%_45%_55%/65%_60%_40%_35%]"
+            >
             <Image
               src="/image1.png"
               alt="handshake"
