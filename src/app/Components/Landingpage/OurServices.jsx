@@ -186,7 +186,7 @@ export default function OurServices() {
     {
       title: "Staffing Solutions",
       image: "/Staffing.jpg",
-      link: "/services/staffing",
+      link: "/services/Staffing",
       desc: "Our staffing solutions are designed to support dynamic workforce needs with speed and efficiency. We offer flexible staffing models including temporary, contract, and permanent hiring.",
     },
     {
