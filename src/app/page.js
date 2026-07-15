@@ -1,5 +1,6 @@
 
 import Footer from "./Components/Footer/Footer";
+import AddInternModal from "./Components/Landingpage/AddInternModal";
 import CounterSection from "./Components/Landingpage/CounterSection";
 import HeroSection from "./Components/Landingpage/HeroSection";
 import HeroSection2 from "./Components/Landingpage/HeroSection2";
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <Navbar />
       <HeroSection />
+      <AddInternModal/>
       <PartnersSection/><br/>
       <OurServices />
       <CounterSection/>

@@ -110,7 +110,7 @@ function TestimonialCard({ item }) {
 
         <div>
           <h4 className="font-semibold text-black">{item.name}</h4>
-          <p className="text-sm text-gray-500">{item.role}</p>
+          <p className="text-sm text-gray-700">{item.role}</p>
           <p className="text-sm text-orange-500">{item.company}</p>
         </div>
       </div>
